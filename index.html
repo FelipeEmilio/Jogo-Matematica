@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Jogo de Matemática</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Jogo de Matemática</h1>
+      <p>
+        Você tem 1 minuto para resolver o máximo de operações matemáticas
+        possíveis.
+      </p>
+      <div id="operation"></div>
+      <input type="text" id="answer" placeholder="Digite sua resposta"/>
+      <button onclick="checkAnswer()">Responder</button>
+      <div id="result"></div>
+      <div id="score">Pontuação: 0</div>
+      <div id="time">Tempo restante: 60</div>
+      <button id="reiniciar" onclick="iniciarJogo()">Começar</button>
+    </div>
+  </body>
+</html>
